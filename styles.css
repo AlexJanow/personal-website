@@ -1,3 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: black;
   color: whitesmoke;
@@ -9,6 +20,7 @@ body {
 
 img {
   -webkit-filter: grayscale(100%);
+  border: 2px solid whitesmoke;
 }
 
 .topnav {
@@ -38,4 +50,20 @@ img {
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+.skills {
+  margin: 10%;
+}
+
+.connect {
+  margin: 10%;
+}
+
+.social {
+  margin: 10%;
+}
+
+.top {
+  margin-top: 10%;
 }
