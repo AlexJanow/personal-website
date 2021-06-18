@@ -1,3 +1,4 @@
+/* smooth navigation jumping */
 html {
   scroll-behavior: smooth;
 }
@@ -9,22 +10,53 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+/* phone size */
+@media screen and (max-width: 400px) {
+  img {
+    max-width: 100%;
+  }
+  .topnav {
+    margin-bottom: 20%;
+    float: none;
+  }
+  main {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ipad size */
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 100%;
+  }
+  .topnav {
+    margin-bottom: 20%;
+  }
+}
+
+/* smaller structure */
 body {
   background-color: black;
   color: whitesmoke;
   margin: auto;
-  width: 50%;
+  width: 60%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* image morphing */
+
 img {
   -webkit-filter: grayscale(100%);
   border: 2px solid whitesmoke;
+  border-radius: 50%;
 }
+/* navigation */
 
 .topnav {
   overflow: hidden;
+  margin-bottom: 20%;
 }
 .topnav a {
   float: initial;
@@ -41,6 +73,7 @@ img {
   color: black;
 }
 
+/*  back to top arrow  */
 .arrow {
   border: solid whitesmoke;
   border-width: 0 3px 3px 0;
@@ -54,22 +87,12 @@ img {
   margin: 40px;
 }
 
-.skills {
-  margin: 10%;
-}
+/* content spacing */
 
-.connect {
-  margin: 10%;
-}
-
-.social {
+.skills .connect .social .footer {
   margin: 10%;
 }
 
 .top {
   margin-top: 10%;
-}
-
-.footer {
-  margin: 10%;
 }
