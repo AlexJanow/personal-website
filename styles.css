@@ -38,19 +38,60 @@ html {
 /* smaller structure */
 body {
   background-color: black;
-  color: whitesmoke;
+  color: gainsboro;
   margin: auto;
   width: 60%;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* text color */
+p {
+  color: grey;
+}
+
+h1 {
+  color: gainsboro;
+}
+
+h2 {
+  margin-bottom: 5%;
+  color: gainsboro;
+}
+
+a {
+  overflow: hidden;
+  color: gainsboro;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+/* hover doesn't work */
+a:hover {
+  color: pink;
+}
+.container .btn {
+  background-color: black;
+  border: none;
+  color: gainsboro;
+  border: 2px gainsboro;
+  cursor: pointer;
+}
+
 /* image morphing */
 
 img {
   -webkit-filter: grayscale(100%);
-  border: 2px solid whitesmoke;
+  border: 2px solid gainsboro;
   border-radius: 50%;
+}
+.logo {
+  border: none;
+  width: 20%;
+}
+.logo1 {
+  border: none;
+  width: 13%;
 }
 /* navigation */
 
@@ -60,7 +101,7 @@ img {
 }
 .topnav a {
   float: initial;
-  color: #f2f2f2;
+  color: gainsboro;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -95,4 +136,9 @@ img {
 
 .top {
   margin-top: 10%;
+}
+
+.divnotcenter {
+  width: 180%;
+  float: right;
 }
